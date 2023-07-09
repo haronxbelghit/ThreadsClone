@@ -8,17 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		93128C712A5AF4F800277379 /* ThreadsCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93128C702A5AF4F800277379 /* ThreadsCloneApp.swift */; };
-		93128C732A5AF4F800277379 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93128C722A5AF4F800277379 /* ContentView.swift */; };
 		93128C752A5AF4FB00277379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93128C742A5AF4FB00277379 /* Assets.xcassets */; };
 		93128C782A5AF4FB00277379 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93128C772A5AF4FB00277379 /* Preview Assets.xcassets */; };
+		93128C832A5B6E6300277379 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93128C822A5B6E6300277379 /* ContentView.swift */; };
+		93128C852A5B6EE400277379 /* ThreadsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93128C842A5B6EE400277379 /* ThreadsContentView.swift */; };
+		93128C872A5B6F3D00277379 /* ThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93128C862A5B6F3D00277379 /* ThreadViewModel.swift */; };
+		93128C892A5B6F6E00277379 /* ThreadCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93128C882A5B6F6E00277379 /* ThreadCardViewModel.swift */; };
+		93128C8D2A5B6FF700277379 /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93128C8C2A5B6FF700277379 /* ThreadService.swift */; };
+		93128C8F2A5B70DF00277379 /* ThreadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93128C8E2A5B70DF00277379 /* ThreadModel.swift */; };
+		93128C912A5B717400277379 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93128C902A5B717400277379 /* CustomTabBar.swift */; };
+		93128C932A5B71AE00277379 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93128C922A5B71AD00277379 /* TabBarButton.swift */; };
+		93128C962A5B723000277379 /* ThreadCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93128C952A5B723000277379 /* ThreadCard.swift */; };
+		93128C982A5B726200277379 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93128C972A5B726200277379 /* LikeButton.swift */; };
+		93128C9A2A5B72AE00277379 /* MoreBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93128C992A5B72AD00277379 /* MoreBottomSheet.swift */; };
+		93128C9D2A5B72F900277379 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93128C9C2A5B72F900277379 /* IconButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		93128C6D2A5AF4F800277379 /* ThreadsClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93128C702A5AF4F800277379 /* ThreadsCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsCloneApp.swift; sourceTree = "<group>"; };
-		93128C722A5AF4F800277379 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93128C742A5AF4FB00277379 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93128C772A5AF4FB00277379 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		93128C822A5B6E6300277379 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		93128C842A5B6EE400277379 /* ThreadsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsContentView.swift; sourceTree = "<group>"; };
+		93128C862A5B6F3D00277379 /* ThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadViewModel.swift; sourceTree = "<group>"; };
+		93128C882A5B6F6E00277379 /* ThreadCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCardViewModel.swift; sourceTree = "<group>"; };
+		93128C8C2A5B6FF700277379 /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
+		93128C8E2A5B70DF00277379 /* ThreadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadModel.swift; sourceTree = "<group>"; };
+		93128C902A5B717400277379 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		93128C922A5B71AD00277379 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
+		93128C952A5B723000277379 /* ThreadCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCard.swift; sourceTree = "<group>"; };
+		93128C972A5B726200277379 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
+		93128C992A5B72AD00277379 /* MoreBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreBottomSheet.swift; sourceTree = "<group>"; };
+		93128C9C2A5B72F900277379 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +73,11 @@
 		93128C6F2A5AF4F800277379 /* ThreadsClone */ = {
 			isa = PBXGroup;
 			children = (
+				93128C812A5B6E1D00277379 /* Services */,
+				93128C802A5B6E1300277379 /* Models */,
+				93128C7F2A5B6DFF00277379 /* ViewModels */,
+				93128C7E2A5B6DF700277379 /* Views */,
 				93128C702A5AF4F800277379 /* ThreadsCloneApp.swift */,
-				93128C722A5AF4F800277379 /* ContentView.swift */,
 				93128C742A5AF4FB00277379 /* Assets.xcassets */,
 				93128C762A5AF4FB00277379 /* Preview Content */,
 			);
@@ -65,6 +90,46 @@
 				93128C772A5AF4FB00277379 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		93128C7E2A5B6DF700277379 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93128C822A5B6E6300277379 /* ContentView.swift */,
+				93128C842A5B6EE400277379 /* ThreadsContentView.swift */,
+				93128C902A5B717400277379 /* CustomTabBar.swift */,
+				93128C922A5B71AD00277379 /* TabBarButton.swift */,
+				93128C952A5B723000277379 /* ThreadCard.swift */,
+				93128C972A5B726200277379 /* LikeButton.swift */,
+				93128C992A5B72AD00277379 /* MoreBottomSheet.swift */,
+				93128C9C2A5B72F900277379 /* IconButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93128C7F2A5B6DFF00277379 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				93128C862A5B6F3D00277379 /* ThreadViewModel.swift */,
+				93128C882A5B6F6E00277379 /* ThreadCardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		93128C802A5B6E1300277379 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93128C8E2A5B70DF00277379 /* ThreadModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93128C812A5B6E1D00277379 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				93128C8C2A5B6FF700277379 /* ThreadService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +202,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93128C732A5AF4F800277379 /* ContentView.swift in Sources */,
+				93128C852A5B6EE400277379 /* ThreadsContentView.swift in Sources */,
+				93128C962A5B723000277379 /* ThreadCard.swift in Sources */,
+				93128C9D2A5B72F900277379 /* IconButton.swift in Sources */,
+				93128C872A5B6F3D00277379 /* ThreadViewModel.swift in Sources */,
+				93128C8F2A5B70DF00277379 /* ThreadModel.swift in Sources */,
+				93128C982A5B726200277379 /* LikeButton.swift in Sources */,
+				93128C932A5B71AE00277379 /* TabBarButton.swift in Sources */,
+				93128C912A5B717400277379 /* CustomTabBar.swift in Sources */,
 				93128C712A5AF4F800277379 /* ThreadsCloneApp.swift in Sources */,
+				93128C9A2A5B72AE00277379 /* MoreBottomSheet.swift in Sources */,
+				93128C892A5B6F6E00277379 /* ThreadCardViewModel.swift in Sources */,
+				93128C832A5B6E6300277379 /* ContentView.swift in Sources */,
+				93128C8D2A5B6FF700277379 /* ThreadService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
