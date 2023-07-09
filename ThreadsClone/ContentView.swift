@@ -32,25 +32,50 @@ struct ThreadsContent: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            ScrollView {
-                LazyVStack {
-                    HStack {
-                        Image("threadlogo")
-                            .resizable()
-                            .frame(width: 35, height: 35)
+            if selectedTab == .home {
+                ScrollView {
+                    LazyVStack {
+                        HStack {
+                            Image("threadlogo")
+                                .resizable()
+                                .frame(width: 35, height: 35)
+                        }
+                        ForEach(threads) { thread in
+                            ThreadCard(thread: thread)
+                            Divider()
+                                .foregroundColor(Color.gray.opacity(0.1))
+                        }
                     }
-                    ForEach(threads) { thread in
-                        ThreadCard(thread: thread)
-                        Divider()
-                            .foregroundColor(Color.gray.opacity(0.1))
+                    .padding()
+                }.padding(.top, 1)
+            } else {
+                ScrollView {
+                    LazyVStack {
+                        Text(selectedTabString)
+                            .font(.title)
+                            .padding()
                     }
                 }
-                .padding()
-            }.padding(.top, 1)
+            }
             
             CustomTabBar(selectedTab: $selectedTab)
         }
         .background(Color(UIColor.systemBackground))
+    }
+    
+    private var selectedTabString: String {
+        switch selectedTab {
+        case .home:
+            return "Home"
+        case .search:
+            return "Search"
+        case .edit:
+            return "Edit"
+        case .favorite:
+            return "Favorite"
+        case .profile:
+            return "Profile"
+        }
     }
 }
 
