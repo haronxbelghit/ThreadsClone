@@ -16,12 +16,36 @@ struct ThreadCard: View {
 
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
-            Image(viewModel.profileImage)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 40, height: 40)
-                .clipShape(Circle())
-                .padding(.trailing, 8)
+            VStack {
+                Image(viewModel.profileImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 40, height: 40)
+                    .clipShape(Circle())
+                    .padding(.trailing, 8)
+
+//                HStack(spacing: 0) {
+//                    Image("ekstinct")
+//                        .resizable()
+//                        .aspectRatio(contentMode: .fill)
+//                        .frame(width: 20, height: 20)
+//                        .clipShape(Circle())
+//
+//                    Image("ekstinct")
+//                        .resizable()
+//                        .aspectRatio(contentMode: .fill)
+//                        .frame(width: 25, height: 25)
+//                        .clipShape(Circle())
+//
+//                    Image("ekstinct")
+//                        .resizable()
+//                        .aspectRatio(contentMode: .fill)
+//                        .frame(width: 15, height: 15)
+//                        .clipShape(Circle())
+//                }
+//                .padding(.top, 4)
+//                .padding(.leading, -50)
+            }
 
             VStack(alignment: .leading, spacing: 4) {
                 HStack(spacing: 2) {
@@ -64,21 +88,59 @@ struct ThreadCard: View {
                 .padding(.bottom, 8)
                 .padding(.top, 4)
 
-                HStack(spacing: 8) {
-                    Text("164 replies")
-                        .font(.system(size: 14))
-                        .foregroundColor(.gray)
-                    Text("99 likes")
-                        .font(.system(size: 14))
-                        .foregroundColor(.gray)
+                Spacer()
+
+                HStack(spacing: 0) {
+                    Image("ekstinct")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 20, height: 20)
+                        .clipShape(Circle())
+                        .offset(x: 5, y: -2.5) // Adjust the X and Y coordinates for the first image
+
+                    Image("ekstinct")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 25, height: 25)
+                        .clipShape(Circle())
+                        .offset(x: 5, y: -15) // Adjust the X and Y coordinates for the second image
+
+                    Image("ekstinct")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 15, height: 15)
+                        .clipShape(Circle())
+                        .offset(x: -20, y: 5) // Adjust the X and Y coordinates for the third image
                 }
+                .padding(.leading, -60)
+                .padding(.top, -45)
             }
             .padding(.trailing, 8)
         }
         .padding(.vertical, 8)
+        .overlay(
+            Rectangle()
+                .frame(width: 1)
+                .foregroundColor(.gray.opacity(0.5))
+                .frame(maxHeight: .infinity)
+                .padding(.leading, -160)
+                .padding(.top, 50)
+                .padding(.bottom, 55)
+        )
         .sheet(isPresented: $viewModel.showSheet) {
             MoreBottomSheet(showSheet: $viewModel.showSheet)
         }
-        .id(viewModel.id) // Explicit id for the view
+        .id(viewModel.id)
     }
 }
+
+struct ThreadCard_Previews: PreviewProvider {
+    static var previews: some View {
+        let viewModel = ThreadCardViewModel(thread: ThreadModel(id: 1, name: "John Doe", isVerified: false, time: "1h", message: "This is a sample message", profileImage: "ekstinct", messagePhoto: "threadlogo"))
+        ThreadCard(viewModel: viewModel)
+            .previewLayout(.sizeThatFits)
+            .padding(.top, 160)
+            .padding(.leading, 25)
+    }
+}
+
